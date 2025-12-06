@@ -1,13 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Controle e Finanças</title>
+    <title>Controle de Finanças</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <h1>Controle e Finanças</h1>
+    <div class="container">
+        <h1>Controle de Finanças</h1>
+        
+        <h2>Digite seu Salário</h2>
+        <div class="bloco">
+            <input type="number" id="salario" placeholder="Digite o salário">
+            <button onclick="salvarSalario()">Salvar Salário</button>
+        </div>
 
+        <h2>Adicione uma Despesa</h2>
+        <div class="bloco">
+            <input type="date" id="dataDespesa">
+            <input type="text" id="nomeDespesa" placeholder="Nome da despesa">
+            <input type="number" id="valorDespesa" placeholder="Valor">
+            <button onclick="adicionarDespesa()">Adicionar</button>
+        </div>
 
+        <h2>Resumo</h2>
+        <div class="resumo">
+            <p>Salário: <strong id="resumoSalario">R$ 0.00</strong></p>
+            <p>Despesas: <strong id="resumoDespesas">R$ 0.00</strong></p>
+            <p>Saldo: <strong id="resumoSaldo">R$ 0.00</strong></p>
+        </div>
+
+        <h2>Despesas</h2>
+        <div id="listaDespesas" class="lista">
+            <p>Nenhuma despesa registrada</p>
+        </div>
+
+        <button onclick="limparTodosDados()" class="botao-limpar">Limpar Tudo</button>
+    </div>
+
+    <script src="js/controle.js"></script>
 </body>
 </html>

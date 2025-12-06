@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+h2 {
+    color: #333;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.bloco {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.botao-limpar {
+    background-color: #f44336;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.botao-limpar:hover {
+    background-color: #da190b;
+}
+
+.resumo {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-left: 4px solid #4CAF50;
+    border-radius: 3px;
+}
+
+.resumo p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.resumo strong {
+    color: #2e7d32;
+    font-size: 18px;
+}
+
+.lista {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.lista p {
+    color: #999;
+    text-align: center;
+}
+
+.despesa-item {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.despesa-info {
+    flex: 1;
+}
+
+.despesa-data {
+    color: #999;
+    font-size: 12px;
+}
+
+.despesa-nome {
+    color: #333;
+    font-weight: bold;
+}
+
+.despesa-valor {
+    color: #f44336;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.btn-deletar {
+    width: auto;
+    padding: 5px 10px;
+    background-color: #f44336;
+    font-size: 12px;
+}
+
+.btn-deletar:hover {
+    background-color: #da190b;
+}
