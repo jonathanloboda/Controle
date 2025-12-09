@@ -9,7 +9,6 @@ document.getElementById("campoSalario").addEventListener("submit", function(even
     event.preventDefault();
 
     let valor = document.getElementById("salario").value.trim();
-    valor = valor.replace(",", ".");
 
     const s = parseFloat(valor);
 
