@@ -5,7 +5,7 @@ let despesas = JSON.parse(localStorage.getItem('despesas')) || [];
 exibir_resumo();
 atualizarLista();
 
-document.getElementById("formSalario").addEventListener("submit", function(event){
+document.getElementById("campoSalario").addEventListener("submit", function(event){
     event.preventDefault();
 
     let valor = document.getElementById("salario").value.trim();
@@ -20,15 +20,15 @@ document.getElementById("formSalario").addEventListener("submit", function(event
 
     salario = s;
     localStorage.setItem('salario', salario);
-    document.getElementById("formSalario").reset();
+    document.getElementById("campoSalario").reset();
     exibir_resumo();
 });
 
 
-document.getElementById("formDespesa").addEventListener("submit", function(e){
+document.getElementById("campoDespesa").addEventListener("submit", function(e){
     e.preventDefault();
 
-    let data = document.getElementById("data_despesa").value.trim();
+    let data = document.getElementById("data_despesa").value;
     let descricao = document.getElementById("descricao_despesa").value.trim();
     let valorStr = document.getElementById("valor_despesa").value.trim();
 
@@ -45,7 +45,7 @@ document.getElementById("formDespesa").addEventListener("submit", function(e){
     despesas.push(despesa);
     localStorage.setItem('despesas', JSON.stringify(despesas));
 
-    document.getElementById("formDespesa").reset();
+    document.getElementById("campoDespesa").reset();
     atualizarLista();
     exibir_resumo();
 });
@@ -64,7 +64,7 @@ function atualizarLista() {
     });
 }
 
-function limpar() {
+function removerTudo() {
     localStorage.removeItem('salario');
     localStorage.removeItem('despesas');
     document.getElementById("lista_despesas").innerHTML = "";

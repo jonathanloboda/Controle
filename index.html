@@ -10,7 +10,7 @@
     <div>
         <h1>Cadastro Financeiro</h1>
 
-        <form id = "formSalario">
+        <form id = "campoSalario">
             <label for="salario">Salário:</label>
             <input type="text" id="salario" placeholder="00.00" required>
             <button type="submit" id="btn_cadastrarSalario">Cadastrar Salário</button>
@@ -18,7 +18,7 @@
 
         <h3>Despesas</h3>
         
-        <form id="formDespesa">
+        <form id="campoDespesa">
             <label for="data_despesa">Data:</label>
             <input type="date" id="data_despesa" required>
             <label for="descricao_despesa">Nome Despesa:</label>
@@ -36,7 +36,7 @@
         
         <div id="resumo"></div>
 
-        <button type="button" id="btn_limpar" onclick="limpar()">Limpar</button>
+        <button type="button" id="btn_limpar" onclick="removerTudo()">Limpar</button>
 
         <script type="text/javascript" src="js/controle.js"></script>
     </div>

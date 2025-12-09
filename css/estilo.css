@@ -3,7 +3,7 @@
     margin: 10px;
     box-sizing: border-box;
 }
-#formSalario{
+#campoSalario{
     width: 300px;
     margin: auto;
     border: 2px solid #000;
@@ -11,7 +11,7 @@
     border-radius: 10px;
     background-color: #f2f2f2;      
 }
-#formDespesa{
+#campoDespesa{
     width: 300px;
     margin: auto;
     border: 2px solid #000;
