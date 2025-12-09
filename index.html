@@ -1,44 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Controle de Finanças</title>
+    <title>Cadastro financeiro</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Controle de Finanças</h1>
+    <div>
+        <h1>Cadastro Financeiro</h1>
+
+        <form id = "formSalario">
+            <label for="salario">Salário:</label>
+            <input type="text" id="salario" placeholder="00.00" required>
+            <button type="submit" id="btn_cadastrarSalario">Cadastrar Salário</button>
+        </form>
+
+        <h3>Despesas</h3>
         
-        <h2>Digite seu Salário</h2>
-        <div class="bloco">
-            <input type="number" id="salario" placeholder="Digite o salário">
-            <button onclick="salvarSalario()">Salvar Salário</button>
-        </div>
+        <form id="formDespesa">
+            <label for="data_despesa">Data:</label>
+            <input type="date" id="data_despesa" required>
+            <label for="descricao_despesa">Nome Despesa:</label>
+            <input type="text" id="descricao_despesa" required>
+            <label for="valor_despesa">Valor:</label>
+            <input type="text" id="valor_despesa" placeholder="00.00" required>
+            <button type="submit" id="btn_cadastrarDespesa">Cadastrar</button>
+        </form>
 
-        <h2>Adicione uma Despesa</h2>
-        <div class="bloco">
-            <input type="date" id="dataDespesa">
-            <input type="text" id="nomeDespesa" placeholder="Nome da despesa">
-            <input type="number" id="valorDespesa" placeholder="Valor">
-            <button onclick="adicionarDespesa()">Adicionar</button>
-        </div>
+        <h3>Lista de Despesas</h3>
+        
+        <ul id="lista_despesas"></ul>
 
-        <h2>Resumo</h2>
-        <div class="resumo">
-            <p>Salário: <strong id="resumoSalario">R$ 0.00</strong></p>
-            <p>Despesas: <strong id="resumoDespesas">R$ 0.00</strong></p>
-            <p>Saldo: <strong id="resumoSaldo">R$ 0.00</strong></p>
-        </div>
+        <h3>Resumo</h3>
+        
+        <div id="resumo"></div>
 
-        <h2>Despesas</h2>
-        <div id="listaDespesas" class="lista">
-            <p>Nenhuma despesa registrada</p>
-        </div>
+        <button type="button" id="btn_limpar" onclick="limpar()">Limpar</button>
 
-        <button onclick="limparTodosDados()" class="botao-limpar">Limpar Tudo</button>
+        <script type="text/javascript" src="js/controle.js"></script>
     </div>
-
-    <script src="js/controle.js"></script>
 </body>
 </html>
