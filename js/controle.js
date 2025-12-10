@@ -88,7 +88,7 @@ function exibir_resumo(){
     }
 
     let saldoFinal = s - total;
-
+    
     let p1 = document.createElement('p');
     p1.textContent = "Salário: R$ " + s.toFixed(2);
 
@@ -98,7 +98,14 @@ function exibir_resumo(){
     let p3 = document.createElement('p');
     p3.textContent = "Saldo Final: R$ " + saldoFinal.toFixed(2);
 
+    if (saldoFinal > 0) {
+        p3.style.color = "green";
+    }
+    if(saldoFinal < 0){
+        p3.style.color = "red";
+    }
+
     resumo.appendChild(p1);
     resumo.appendChild(p2);
     resumo.appendChild(p3);
-}
+}  
