@@ -99,10 +99,10 @@ function exibir_resumo(){
     p3.textContent = "Saldo Final: R$ " + saldoFinal.toFixed(2);
 
     if (saldoFinal > 0) {
-        p3.style.color = "green";
+        p3.style.color="green";
     }
     if(saldoFinal < 0){
-        p3.style.color = "red";
+        p3.style.color="red";
     }
 
     resumo.appendChild(p1);
