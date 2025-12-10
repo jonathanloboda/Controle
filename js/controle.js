@@ -108,4 +108,5 @@ function exibir_resumo(){
     resumo.appendChild(p1);
     resumo.appendChild(p2);
     resumo.appendChild(p3);
-}  
+
+}
